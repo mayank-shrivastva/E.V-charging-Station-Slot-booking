@@ -1,6 +1,19 @@
 
 <?php
-function build_calendar($month, $year) {	
+function build_calendar($month, $year) {
+$mysqli = new mysqli('localhost', 'root','', 'bookingcalendar');
+    $stmt = $mysqli->prepare('select * from bookings where MONTH(date) = ? AND YEAR(date) = ?');
+    $stmt->bind_param('ss', $month, $year);
+    $bookings = array();
+    if($stmt->execute()){
+        $result = $stmt->get_result();
+        if($result->num_rows > 0){
+            while($row = $result->fetch_assoc()){
+                $bookings[] = $row['date'];
+            }
+            $stmt->close();
+        }
+    }	
     $daysOfWeek = array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
     $firstDayOfMonth = mktime(0, 0, 0, $month, 1, $year);
     $numberDays = date('t', $firstDayOfMonth);
@@ -43,7 +56,18 @@ function build_calendar($month, $year) {
         $date = "$year-$month-$currentDayRel";
         $dayName = strtolower(date('I', strtotime($date)));
         $today = $date == date('Y-m-d') ? 'today' : '';
-        $calendar .= "<td class='$today'><h3>$currentDayRel</h3></td>";
+		if(in_array($date, $bookings)){
+			$calendar .= "<td class='$today'><h3>$currentDayRel</h3><a class ='btn btn-danger btn-xs'>Booked</a></td>";
+        
+		}
+		else{
+			$calendar .= "<td class='$today'><h3>$currentDayRel</h3><a class ='btn btn-success btn-xs'>Book</a></td>";
+        
+			
+			
+		}
+		
+		
         $currentDay++;
         $dayOfWeek++; 
     }

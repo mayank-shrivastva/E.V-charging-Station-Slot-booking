@@ -107,11 +107,7 @@ include "../php-code/booking-calender.php";
 							<span class="nav-text">Rent Car</span>
 						</a>
                     </li>
-                    <li><a href="../pages/profile.html" aria-expanded="false">
-							<i class="flaticon-086-star"></i>
-							<span class="nav-text">Profile</span>
-						</a>
-                    </li>
+                   
                     
                    
                    

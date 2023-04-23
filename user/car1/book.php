@@ -108,11 +108,7 @@ include"bookings.php";
 							<span class="nav-text">Rent Car</span>
 						</a>
                     </li>
-                    <li><a href="../pages/profile.html" aria-expanded="false">
-							<i class="flaticon-086-star"></i>
-							<span class="nav-text">Profile</span>
-						</a>
-                    </li>
+                   
                    
                    
                    
@@ -184,6 +180,10 @@ include"bookings.php";
 		<div class="form-group">
 		<label for=""> Email</label>
 		<input readonly type ="email"  name="email" value="<?php echo $row['email'];?>" class="form-control">
+		</div>
+		<div class="form-group">
+		<label for=""> Owner Email</label>
+		<input readonly type ="email"  name="owner_email" value="mayank.shrivastva_cs21@gla.ac.in" class="form-control">
 		</div>
 		<div class="form-group">
 		<label for=""> Car modal</label>

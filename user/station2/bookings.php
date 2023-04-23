@@ -3,7 +3,7 @@ $mysqli = new mysqli('localhost', 'root', '', 'bookingcalendar');
 
 if(isset($_GET['dte'])){
 $date = $_GET['dte'];
- $stmt = $mysqli->prepare('select * from s2 where date= ?');
+ $stmt = $mysqli->prepare('select * from s1 where date= ?');
     $stmt->bind_param('s', $date);
     $bookings = array();
     if($stmt->execute()){
@@ -19,11 +19,12 @@ $date = $_GET['dte'];
 if(isset($_POST['submit'])){
 $name = $_POST['name'];
 $email = $_POST['email'];
+$owner_email = $_POST['owner_email'];
 $timeslot = $_POST['timeslot'];
 $vnumber = $_POST['vnumber'];
 $station = $_POST['station'];
-$stmt = $mysqli->prepare("INSERT INTO s2 (name, timeslot, email, date,vnumber,station) VALUES (?,?,?,?,?,?)");
-$stmt->bind_param('ssssss', $name, $timeslot, $email, $date,$vnumber, $station);
+$stmt = $mysqli->prepare("INSERT INTO s1 (name, timeslot, email,owner_email, date,vnumber,station) VALUES (?,?,?,?,?,?,?)");
+$stmt->bind_param('sssssss', $name, $timeslot, $email,$owner_email, $date,$vnumber, $station);
 $stmt->execute();
 $msg = "<div class='alert alert-success'>Booking Successfull</div>";
 $bookings[]=$timeslot;

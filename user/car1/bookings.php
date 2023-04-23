@@ -19,11 +19,12 @@ $date = $_GET['dte'];
 if(isset($_POST['submit'])){
 $name = $_POST['name'];
 $email = $_POST['email'];
+$owner_email = $_POST['owner_email'];
 $timeslot = $_POST['timeslot'];
 $carmodel = $_POST['carmodel'];
 $carnumber = $_POST['carnumber'];
-$stmt = $mysqli->prepare("INSERT INTO c1 (name, timeslot, email, date,carmodel,carnumber) VALUES (?,?,?,?,?,?)");
-$stmt->bind_param('ssssss', $name, $timeslot, $email, $date,$carmodel,$carnumber);
+$stmt = $mysqli->prepare("INSERT INTO c1 (name, timeslot, email, owner_email, date,carmodel,carnumber) VALUES (?,?,?,?,?,?,?)");
+$stmt->bind_param('sssssss', $name, $timeslot, $email, $owner_email, $date,$carmodel,$carnumber);
 $stmt->execute();
 $msg = "<div class='alert alert-success'>Booking Successfull</div>";
 $bookings[]=$timeslot;

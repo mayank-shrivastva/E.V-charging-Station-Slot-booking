@@ -53,7 +53,14 @@ people who may not be familiar with electric vehicles or the charging
 process. The platform will feature a map that shows the location of
 available charging stations and electric cars, along with real-time
 availability information.
+
+
+                     
                     </p>
+					 <a href="user/"><button data-aos="fade-in" type="button" class="btn btn-primary read-button" data-aos-duration="1000" data-aos-mirror="true">Book Now <i
+                            class="fa-solid fa-arrow-right"></i></button></a>
+					
+					   
                 </div>
 </div>
                 <div class="row services-page-row">
@@ -67,6 +74,8 @@ can travel on a single charge. In addition to the development of the platform, t
 the installation of new EV charging stations in strategic locations, such as
 shopping malls, airports, and public parking areas.
                     </p>
+					<a href="user/"><button data-aos="fade-in" type="button" class="btn btn-primary read-button" data-aos-duration="1000" data-aos-mirror="true">Book Now <i
+                            class="fa-solid fa-arrow-right"></i></button></a>
 </div>
                 <div class="col-lg-6" id="about-image">
                     <img id="img-2" class="services-page-image" src="images/EcarCharging.jpg" alt="Scooter-img" data-aos="fade-left" data-aos-duration="1000" data-aos-mirror="true">

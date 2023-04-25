@@ -14,7 +14,7 @@
 </head>
 <body>
 <header>
-<a href="../index.php" class="logo" font-colour="white">EVRC</a>
+<a href="../index.php" class="logo" ><h1>EVRC</h1></a>
 <div class="bx bx-menu" id="menu-icon"></div>
 <ul class="navbar">
  

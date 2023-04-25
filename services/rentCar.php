@@ -12,7 +12,7 @@
 </head>
 <body>
 <header>
-<a href="#" class="logo"><img src="img/jeep.png"></a>
+<a href="../index.php" class="logo" ><h1>EVRC</h1></a>
 <div class="bx bx-menu" id="menu-icon"></div>
 <ul class="navbar">
  

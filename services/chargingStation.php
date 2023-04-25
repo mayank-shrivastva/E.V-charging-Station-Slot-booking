@@ -21,7 +21,7 @@
 <li><a href="../index.php">Home</a></li>
 <li><a href="../about.php">About</a></li>
 <li><a href="../services.php">Service</a></li>
-<li><a href="#home">Contact</a></li>
+<li><a href="../contact.php">Contact</a></li>
 </ul>
 <div class="header-btn">
 <a href="#" class="sign-up"> Login</a>

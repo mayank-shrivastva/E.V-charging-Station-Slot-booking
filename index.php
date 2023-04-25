@@ -120,7 +120,7 @@
                 <img src="images/Ecars.jpg" alt="car-img" class="card-img-top" id="img-1-services">
                 <h5 class="card-title">Electronic Vehicles Rental</h5>
                 <p class="card-text">We at EVRC provide our customers with Electric vehicle rentals to help them with their daily needs...</p>
-                <a href="services.php"><button class="btn btn-primary services-button">Read more</button></a>
+                <a href="services/rentCar.php"><button class="btn btn-primary services-button">Read more</button></a>
             </div>    
         </div>
         <div class="col-lg-6 services-col">
@@ -128,7 +128,7 @@
                 <img src="images/EcarCharging.jpg" alt="car-charging" class="card-img-top">
                 <h5 class="card-title">Electronic Vehicles Charging</h5>
                 <p class="card-text">We also provide charging stations that can be booked on hourly basis to charge your personal vehicles...</p>
-                <a href="services.php"><button type="button" class="btn btn-primary services-button">Read more</button></a>
+                <a href="services/chargingStation.php"><button type="button" class="btn btn-primary services-button">Read more</button></a>
             </div>
         </div>
     </div>

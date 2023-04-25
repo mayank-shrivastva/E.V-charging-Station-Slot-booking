@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 23, 2023 at 07:05 PM
+-- Generation Time: Apr 23, 2023 at 01:50 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -46,6 +46,31 @@ INSERT INTO `admin` (`id`, `name`, `email`, `password`, `code`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `bookings`
+--
+
+CREATE TABLE `bookings` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  `timeslot` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `bookings`
+--
+
+INSERT INTO `bookings` (`id`, `name`, `email`, `date`, `timeslot`) VALUES
+(1, 'iurtiue', 'ufidhfh@fkjhdf.com', '2023-04-14', '17:00PM-18:00PM'),
+(2, 'mayank', 'shrivastva.mayank27@gmail.com', '2023-04-14', '12:00PM-13:00PM'),
+(3, 'Mayank kumar Shrivastva', 'xyz@gmail.com', '2023-04-14', '11:00AM-12:00PM'),
+(4, 'Mayank kumar Shrivastva', 'xyz@gmail.com', '2023-04-14', '14:00PM-15:00PM'),
+(5, 'Mayank kumar Shrivastva', 'xyz@gmail.com', '2023-04-14', '14:00PM-15:00PM');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `c1`
 --
 
@@ -54,7 +79,6 @@ CREATE TABLE `c1` (
   `name` varchar(255) NOT NULL,
   `carmodel` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `owner_email` varchar(255) NOT NULL,
   `date` date NOT NULL,
   `timeslot` varchar(255) NOT NULL,
   `carnumber` varchar(255) NOT NULL
@@ -64,9 +88,79 @@ CREATE TABLE `c1` (
 -- Dumping data for table `c1`
 --
 
-INSERT INTO `c1` (`id`, `name`, `carmodel`, `email`, `owner_email`, `date`, `timeslot`, `carnumber`) VALUES
-(1, 'Mayank kumar Shrivastva', 'MG ZS EV', 'shrivastva.mayank27@gmail.com', 'aryan.singh_cs20@gla.ac.in', '2023-04-23', '09:00AM-10:00AM', 'HR26DQ7854'),
-(2, 'Mayank kumar Shrivastva', 'MG ZS EV', 'shrivastva.mayank27@gmail.com', 'aryan.singh_cs20@gla.ac.in', '2023-04-28', '23:00PM-00:00AM', 'HR26DQ7854');
+INSERT INTO `c1` (`id`, `name`, `carmodel`, `email`, `date`, `timeslot`, `carnumber`) VALUES
+(1, 'Mayank kumar Shrivastva', '0', 'shrivastva.mayank27@gmail.com', '2023-04-14', '08:00AM-09:00AM', '0'),
+(2, 'Mayank kumar Shrivastva', '0', 'shrivastva.mayank27@gmail.com', '2023-04-14', '09:00AM-10:00AM', '0'),
+(3, 'Mayank kumar Shrivastva', '0', 'shrivastva.mayank27@gmail.com', '2023-04-14', '10:00AM-11:00AM', '0'),
+(4, 'Mayank kumar Shrivastva', 'carmodel', 'shrivastva.mayank27@gmail.com', '2023-04-14', '17:00PM-18:00PM', 'carnumber'),
+(5, 'Mayank kumar Shrivastva', 'carmodel', 'shrivastva.mayank27@gmail.com', '2023-04-14', '11:00AM-12:00PM', 'carnumber'),
+(6, 'Mayank kumar Shrivastva', 'carmodel', 'shrivastva.mayank27@gmail.com', '2023-04-14', '12:00PM-13:00PM', 'carnumber'),
+(7, 'Mayank kumar Shrivastva', 'Tata Tiago EV', 'shrivastva.mayank27@gmail.com', '2023-04-21', '08:00AM-09:00AM', 'HR26DQ5551');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `c2`
+--
+
+CREATE TABLE `c2` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `carmodel` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  `timeslot` varchar(255) NOT NULL,
+  `carnumber` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `c2`
+--
+
+INSERT INTO `c2` (`id`, `name`, `carmodel`, `email`, `date`, `timeslot`, `carnumber`) VALUES
+(1, 'qwwewrtgyui', '', 'shrivastva.mayank27@gmail.com', '2023-04-14', '10:00AM-11:00AM', ''),
+(2, 'mayank', 'carmodel', 'shrivastva.mayank27@gmail.com', '2023-04-14', '09:00AM-10:00AM', 'carnumber'),
+(3, 'Mayank kumar Shrivastva', 'carmodel', 'shrivastva.mayank27@gmail.com', '2023-04-14', '11:00AM-12:00PM', 'carnumber'),
+(4, 'Mayank kumar Shrivastva', 'Kia EV6', 'shrivastva.mayank27@gmail.com', '2023-04-21', '08:00AM-09:00AM', 'HR26DQ6789');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `c3`
+--
+
+CREATE TABLE `c3` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `carmodel` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  `timeslot` varchar(255) NOT NULL,
+  `carnumber` varchar(244) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `c3`
+--
+
+INSERT INTO `c3` (`id`, `name`, `carmodel`, `email`, `date`, `timeslot`, `carnumber`) VALUES
+(1, 'Mayank kumar Shrivastva', 'MG ZS EV', 'shrivastva.mayank27@gmail.com', '2023-04-21', '08:00AM-09:00AM', 'HR26DQ7854');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `c4`
+--
+
+CREATE TABLE `c4` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `carmodel` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  `timeslot` varchar(255) NOT NULL,
+  `carnumber` varchar(244) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -89,9 +183,9 @@ CREATE TABLE `cardetails` (
 --
 
 INSERT INTO `cardetails` (`id`, `car name`, `car number`, `mobile`, `email id`, `price`, `book`) VALUES
-(1, 'Tata Tiago EV', 'HR26DQ5551', 8126155501, 'mayank.shrivastva_cs21@gla.ac.in', 200, 'car1'),
-(2, 'Kia EV6', 'HR26DQ6789', 9315228104, 'Himanshudubey802@gmail.com', 250, 'car2'),
-(3, 'MG ZS EV', 'HR26DQ7854', 9667585514, 'aryan.singh_cs20@gla.ac.in', 250, 'car3');
+(1, 'Tata Tiago EV', 'HR26DQ5551', 8126155501, 'aman@gmail.com', 200, 'car1'),
+(2, 'Kia EV6', 'HR26DQ6789', 9315228104, 'yesh12@gmail.com', 250, 'car2'),
+(3, 'MG ZS EV', 'HR26DQ7854', 9667585514, 'mayank@gmail.com', 250, 'car3');
 
 -- --------------------------------------------------------
 
@@ -114,9 +208,8 @@ CREATE TABLE `client` (
 --
 
 INSERT INTO `client` (`id`, `owner name`, `email`, `password`, `GST_number`, `station_address`, `code`) VALUES
-(1, 'Maynak Kumar', 'Himanshudubey802@gmail.com', 'df780a97b7d6a8f779f14728bccd3c4c', 2147483647, 'l-18 shyam park near nawda metro uttam nagar new delhi', ''),
-(2, 'Maynak Kumar', 'aryan.singh_cs20@gla.ac.in', 'df780a97b7d6a8f779f14728bccd3c4c', 2147483647, 'l-18 shyam park near nawda metro uttam nagar new delhi', ''),
-(3, 'Maynak Kumar', 'mayank.shrivastva_cs21@gla.ac.in', 'df780a97b7d6a8f779f14728bccd3c4c', 2147483647, 'Saraswat Motors Station', '');
+(1, 'Maynak Kumar', 'shrivastva.mayank27@gmail.com', 'df780a97b7d6a8f779f14728bccd3c4c', 2147483647, 'l-18 shyam park near nawda metro uttam nagar new delhi', ''),
+(2, 'Maynak Kumar', 'mini.project.gla@gmail.com', 'df780a97b7d6a8f779f14728bccd3c4c', 2147483647, 'l-18 shyam park near nawda metro uttam nagar new delhi', '');
 
 -- --------------------------------------------------------
 
@@ -129,7 +222,6 @@ CREATE TABLE `s1` (
   `station` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `owner_email` varchar(255) NOT NULL,
   `date` date NOT NULL,
   `timeslot` varchar(255) NOT NULL,
   `vnumber` varchar(255) NOT NULL
@@ -139,10 +231,95 @@ CREATE TABLE `s1` (
 -- Dumping data for table `s1`
 --
 
-INSERT INTO `s1` (`id`, `station`, `name`, `email`, `owner_email`, `date`, `timeslot`, `vnumber`) VALUES
-(2, 'Yahhvi Charging Station (Vrindavan)', 'ks', 'shrivastva.mayank27@gmail.com', 'aryan.singh_cs20@gla.ac.in', '2023-04-27', '16:00PM-17:00PM', 'asdfghjkl'),
-(3, 'Saraswat Motors Station( Lohvan)', 'uf', 'shrivastva.mayank27@gmail.com', 'mayank.shrivastva_cs21@gla.ac.in', '2023-04-27', '11:00AM-12:00PM', 'fgfg'),
-(4, 'Yahhvi Charging Station (Vrindavan)', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', 'aryan.singh_cs20@gla.ac.in', '2023-04-28', '11:00AM-12:00PM', 'wertyuiop[');
+INSERT INTO `s1` (`id`, `station`, `name`, `email`, `date`, `timeslot`, `vnumber`) VALUES
+(1, '', 'fh', 'xyz@gmail.com', '2023-04-14', '11:00AM-12:00PM', '1234567'),
+(2, 'sation1', 'mayank', 'xyz@gmail.com', '2023-04-14', '10:00AM-11:00AM', '0'),
+(3, 'dfh', 'dfgh', 'xyz@gmail.com', '2023-04-14', '16:00PM-17:00PM', '0'),
+(4, 'sation1', 'mayank', 'xyz@gmail.com', '2023-04-14', '12:00PM-13:00PM', '35465789'),
+(5, 'Station1', 'Mayank kumar Shrivastva', 'xyz@gmail.com', '2023-04-14', '17:00PM-18:00PM', '0'),
+(6, 'Station1', 'Mayank kumar Shrivastva', 'xyz@gmail.com', '2023-04-14', '15:00PM-16:00PM', '23456'),
+(7, 'Station1', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', '2023-04-14', '08:00AM-09:00AM', 'mh24654'),
+(8, 'Station1', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', '2023-04-14', '18:00PM-19:00PM', 'ng6789'),
+(9, 'Station1', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', '2023-04-14', '13:00PM-14:00PM', 'ty'),
+(10, 'Station1', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', '2023-04-20', '08:00AM-09:00AM', 'mh2425'),
+(11, 'AARGO Charging Station (Kosi Kalan)', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', '2023-04-21', '08:00AM-09:00AM', 'mh24654'),
+(12, 'AARGO Charging Station (Kosi Kalan)', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', '2023-04-21', '15:00PM-16:00PM', 'rertyui\\');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `s2`
+--
+
+CREATE TABLE `s2` (
+  `id` int(11) NOT NULL,
+  `station` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  `timeslot` varchar(255) NOT NULL,
+  `vnumber` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `s2`
+--
+
+INSERT INTO `s2` (`id`, `station`, `name`, `email`, `date`, `timeslot`, `vnumber`) VALUES
+(1, 'Station1', 'mayank', 'xyz@gmail.com', '2023-04-14', '11:00AM-12:00PM', 'mh24654'),
+(2, 'Station2', 'Mayank kumar Shrivastva', 'xyz@gmail.com', '2023-04-14', '10:00AM-11:00AM', 'mh24654'),
+(3, 'Station2', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', '2023-04-14', '12:00PM-13:00PM', 'wer'),
+(4, 'Station2', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', '2023-04-14', '16:00PM-17:00PM', 'trg'),
+(5, 'Station2', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', '2023-04-14', '21:00PM-22:00PM', 'sdfgh');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `s3`
+--
+
+CREATE TABLE `s3` (
+  `id` int(11) NOT NULL,
+  `station` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  `timeslot` varchar(255) NOT NULL,
+  `vnumber` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `s3`
+--
+
+INSERT INTO `s3` (`id`, `station`, `name`, `email`, `date`, `timeslot`, `vnumber`) VALUES
+(1, '', 'asdfnm,.', 'shrivastva.mayank27@gmail.com', '2023-04-14', '16:00PM-17:00PM', ''),
+(2, '', 'fddfghjresedfg', 'shrivastva.mayank27@gmail.com', '2023-04-14', '21:00PM-22:00PM', ''),
+(3, 'Station3', 'Mayank kumar Shrivastva', 'xyz@gmail.com', '2023-04-14', '10:00AM-11:00AM', 'dfghj'),
+(4, 'Station3', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', '2023-04-14', '15:00PM-16:00PM', 'dfgh');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `s4`
+--
+
+CREATE TABLE `s4` (
+  `id` int(11) NOT NULL,
+  `station` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  `timeslot` varchar(255) NOT NULL,
+  `vnumber` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `s4`
+--
+
+INSERT INTO `s4` (`id`, `station`, `name`, `email`, `date`, `timeslot`, `vnumber`) VALUES
+(1, 'Station4', 'Mayank kumar Shrivastva', 'xyz@gmail.com', '2023-04-14', '10:00AM-11:00AM', 'mh24654');
 
 -- --------------------------------------------------------
 
@@ -164,9 +341,9 @@ CREATE TABLE `stationdetail` (
 --
 
 INSERT INTO `stationdetail` (`id`, `station-name`, `mobile-number`, `address`, `email`, `book`) VALUES
-(1, 'AARGO Charging Station', 9315229435, 'Kosi Kalan', 'Himanshudubey802@gmail.com', 'station1/index.php'),
-(2, 'Yahhvi Charging Station', 8126166896, 'Vrindavan', 'aryan.singh_cs20@gla.ac.in', 'station2/index.php'),
-(3, 'Saraswat Motors Station\n', 9548628618, ' Lohvan', 'mayank.shrivastva_cs21@gla.ac.in', 'station3/index.php');
+(1, 'AARGO Charging Station', 9315229435, 'Kosi Kalan', 'aargochargingstation@gmail.com', 'station1/index.php'),
+(2, 'Yahhvi Charging Station', 8126166896, 'Vrindavan', 'yahhvichargingstation@gmail.com', 'station2/index.php'),
+(3, 'Saraswat Motors Station\n', 9548628618, ' Lohvan', 'saraswatimotorsstation@gmail.com', 'station3/index.php');
 
 -- --------------------------------------------------------
 
@@ -187,7 +364,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `code`) VALUES
-(7, 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', 'df780a97b7d6a8f779f14728bccd3c4c', '69209b8d8703ee6a190093a45ed7ce6a');
+(7, 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', 'df780a97b7d6a8f779f14728bccd3c4c', '');
 
 --
 -- Indexes for dumped tables
@@ -200,9 +377,27 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `bookings`
+--
+ALTER TABLE `bookings`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `c1`
 --
 ALTER TABLE `c1`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `c2`
+--
+ALTER TABLE `c2`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `c3`
+--
+ALTER TABLE `c3`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -221,6 +416,24 @@ ALTER TABLE `client`
 -- Indexes for table `s1`
 --
 ALTER TABLE `s1`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `s2`
+--
+ALTER TABLE `s2`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `s3`
+--
+ALTER TABLE `s3`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `s4`
+--
+ALTER TABLE `s4`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -246,10 +459,28 @@ ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT for table `bookings`
+--
+ALTER TABLE `bookings`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `c1`
 --
 ALTER TABLE `c1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `c2`
+--
+ALTER TABLE `c2`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `c3`
+--
+ALTER TABLE `c3`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `cardetails`
@@ -261,13 +492,31 @@ ALTER TABLE `cardetails`
 -- AUTO_INCREMENT for table `client`
 --
 ALTER TABLE `client`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `s1`
 --
 ALTER TABLE `s1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `s2`
+--
+ALTER TABLE `s2`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `s3`
+--
+ALTER TABLE `s3`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `s4`
+--
+ALTER TABLE `s4`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `stationdetail`

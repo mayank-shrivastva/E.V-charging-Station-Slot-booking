@@ -24,7 +24,7 @@
 <li><a href="../contact.php">Contact</a></li>
 </ul>
 <div class="header-btn">
-<a href="#" class="sign-up"> Login</a>
+<a href="../user/login/" class="sign-up"> Login</a>
 </div>
 </header>
   

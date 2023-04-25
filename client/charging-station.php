@@ -21,7 +21,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Owner Portal</title>
+	<title>Client Portal</title>
     <link href="css/style.css" rel="stylesheet">
 	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
@@ -53,7 +53,7 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
 							<div class="dashboard_bar">
-                              Owner Portal
+                              client Portal
                             </div>
                         </div>
                         <ul class="navbar-nav header-right">
@@ -146,10 +146,7 @@
 														<h6 class="fs-16 text-black font-w600 mb-0">Vehical Number</h6>
 														 
 													</td>
-													<td>
-														<h6 class="fs-16 text-black font-w600 mb-0">Action</h6>
-														 
-													</td>
+													 
 													 
 												</tr>
 												<?php  
@@ -185,10 +182,7 @@
 														<h6 class="fs-16 text-black font-w600 mb-0"><?php echo $row['vnumber'];?><h6>
 														 
 													</td>
-													<td>
-							<a href="delete.php?.$id."><input type="submit" name="cancel" value="Cancel" class="btn btn-primary d-sm-inline-block d-none">
-											 
-													</td>
+													 
 												 
 												 
 												 <?php }} 

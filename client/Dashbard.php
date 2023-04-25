@@ -244,8 +244,8 @@
 									<div class="col-xl-6">
 										<div class="row  mt-xl-0 mt-4">
 											<div class="col-md-6">
-												<h4 class="card-title">Card's Overview</h4>
-												<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit psu olor</span>
+												<h4 class="card-title">welcome Client</h4>
+												<span>Compney information</span>
 												<ul class="card-list mt-4">
 												<?php
 								

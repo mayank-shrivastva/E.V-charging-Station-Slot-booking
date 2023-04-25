@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
     href="https://cdn.jsdeliver.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 <body>
@@ -41,26 +42,27 @@
     </section>
     <!-- This is ride section -->
     <!--ride-->
-    <section class="ride" id="ride">
+    <section class="ride" id="ride">    
         <div class="heading">
             <span>How Its Work</span>
-            <h1>Rent With 3 Easy Steps </h1>
+            <h1>Charge With 3 Easy Steps </h1>
         </div>
     <div class="ride-container">
         <div class="box">
-            <i class='bx bx-map'></i>
+           <i class="fa fa-map-marker" style="font-size:48px;color:red"></i>
             <h2>Choose A Location</h2>
-            </div>
+             </div>
 
         <div class="box">
-            <i class='bx bxs-calendar-check'></i>
+            <i class="fa fa-calendar" style="font-size:48px;color:red"></i>
             <h2>Pick-Up Date</h2>
               </div>
 
         <div class="box">
-            <i class="bx bxs-calender-star"></i>
+		  <i class="fa fa-check" style="font-size:48px;color:red"></i>
+        
             <h2>Book A Car</h2>
-             </div>
+            </div>
     </div>
     </section>
     <!--Services-->
@@ -153,11 +155,10 @@
                     </div>
                     <h2>Someone Name</h2>
                     <div class="stars">
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star-half' ></i>
+                       <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+                        
                     </div>
                     <p>I've been driving my MG ZS EV for several months now, and my satisfaction with it has only grown over time. Not only is it a pleasure to drive, with smooth acceleration and a quiet ride, but it has also exceeded my expectations in terms of range and reliability.</p>
                 </div>
@@ -168,11 +169,10 @@
                     </div>
                     <h2>Someone Name</h2>
                     <div class="stars">
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star-half' ></i>
+                      <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
                     </div>
                     <p>Mahindra XUV400 EV performance, build quality, and safety (which has 6 airbags) are all excellent. Nexon and other EVs are drawn to it because of its appearance. It's a pretty excellent car from a highly reliable company because of the increase in length (4200mm).</p>
                 </div>
@@ -183,11 +183,12 @@
                     </div>
                     <h2>Someone Name</h2>
                     <div class="stars">
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star-half' ></i>
+                       <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					  
                     </div>
                     <p>Tata Tiago EV car in the Indian market comes with the lowest price in ev cars. This car can run 250-315 km on one charge. It takes 2.5 hrs to fully charge. This car has a battery of 19.2-24 kWh. This car scored 4 stars in the NCAP crash test.</p>
                 </div>
@@ -198,11 +199,11 @@
                     </div>
                     <h2>Someone Name</h2>
                     <div class="stars">
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star-half' ></i>
+                        <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
                     </div>
                     <p>Kia EV6 gives an impressive range, performance, and design features. The estimated range of up to 300 miles on a single charge would provide ample opportunity for both short and long-distance travel, without the need to stop for frequent charging.</p>
                 </div>

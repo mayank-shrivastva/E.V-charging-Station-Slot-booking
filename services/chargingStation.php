@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet"
     href="https://cdn.jsdeliver.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  
 	  
     
@@ -46,18 +47,19 @@
         </div>
     <div class="ride-container">
         <div class="box">
-            <i class='bx bx-map'></i>
+           <i class="fa fa-map-marker" style="font-size:48px;color:red"></i>
             <h2>Choose A Location</h2>
              </div>
 
         <div class="box">
-            <i class='bx bxs-calendar-check'></i>
+            <i class="fa fa-calendar" style="font-size:48px;color:red"></i>
             <h2>Pick-Up Date</h2>
               </div>
 
         <div class="box">
-            <i class="bx bxs-calender-star"></i>
-            <h2>Book A Car</h2>
+		  <i class="fa fa-check" style="font-size:48px;color:red"></i>
+        
+            <h2>Book A Slot</h2>
             </div>
     </div>
     </section>
@@ -142,11 +144,11 @@ Bicycle Rentals</p>
                     </div>
                     <h2>Someone Name</h2>
                     <div class="stars">
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star-half' ></i>
+                        <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
                     </div>
                     <p>A fast Charging zone with 15kW DC charger for ev at a cheap rate, with free parking and assistance from the station staff.</p>
                 </div>
@@ -157,11 +159,11 @@ Bicycle Rentals</p>
                     </div>
                     <h2>Someone Name</h2>
                     <div class="stars">
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star-half' ></i>
+                         <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
                     </div>
                     <p>A fast Charging zone with 15kW DC charger for ev at a cheap rate, with free parking and assistance from the station staff.</p>
                 </div>
@@ -172,11 +174,11 @@ Bicycle Rentals</p>
                     </div>
                     <h2>Someone Name</h2>
                     <div class="stars">
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star-half' ></i>
+                         <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
                     </div>
                     <p>A fast Charging zone with 15kW DC charger for ev at a cheap rate, with free parking and assistance from the station staff.</p>
                 </div>
@@ -187,11 +189,11 @@ Bicycle Rentals</p>
                     </div>
                     <h2>Someone Name</h2>
                     <div class="stars">
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star-half' ></i>
+                         <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
+					   <span class="fa fa-star checked"></span>
                     </div>
                     <p>A fast Charging zone with 15kW DC charger for ev at a cheap rate, with free parking and assistance from the station staff.</p>
                 </div>

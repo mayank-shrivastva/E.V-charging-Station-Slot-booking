@@ -16,7 +16,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/a31224cfff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css?v=<?php echo time(); ?>">
-    <title>EVRC</title>
+    <title>E.V Charging and Rental</title>
 </head>
 
 <body>

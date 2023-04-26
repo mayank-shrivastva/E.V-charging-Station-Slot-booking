@@ -49,7 +49,7 @@
                         $mail->Port       = 465;                                     
 						
                         //Recipients
-                        $mail->setFrom('mayank14072003@gmail.com');
+                        $mail->setFrom('');
                         $mail->addAddress($email);
 
                         //Content

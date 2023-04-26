@@ -102,7 +102,11 @@
 						</a>
                     </li>
                     
-                    
+                    	<li><a href="contact-form.php" aria-expanded="false">
+							<i class="flaticon-041-graph"></i>
+							<span class="nav-text">Contect-Form</span>
+						</a>
+                    </li>
                    
                    
                    

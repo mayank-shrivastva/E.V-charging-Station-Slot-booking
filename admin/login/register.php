@@ -43,19 +43,19 @@
                         $mail->isSMTP();                                             
                         $mail->Host       = 'smtp.gmail.com';                      
                         $mail->SMTPAuth   = true;                                   
-                        $mail->Username   = '';                    
-                        $mail->Password   = '';                               
+                       $mail->Username   = 'mayank14072003@gmail.com';                     
+                        $mail->Password   = 'xaanlflzudbjianp';                              
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;           
                         $mail->Port       = 465;                                     
 						
                         //Recipients
-                        $mail->setFrom('');
+                        $mail->setFrom('mayank14072003@gmail.com');
                         $mail->addAddress($email);
 
                         //Content
                         $mail->isHTML(true);                                  //Set email format to HTML
                         $mail->Subject = 'no reply';
-                        $mail->Body    = 'Here is the verification link <b><a href="http://localhost/EVRC(Electronic-vehicle-rental-&-charging)/admin/login?verification='.$code.'">Verify</a></b>';
+                        $mail->Body    = 'Here is the verification link <b><a href="http://localhost/E.V-charging-Station-Slot-booking/admin/login?verification='.$code.'">Verify</a></b>';
 
                         $mail->send();
                         echo 'Message has been sent';

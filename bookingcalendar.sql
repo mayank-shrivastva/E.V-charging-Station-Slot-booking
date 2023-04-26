@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2023 at 07:52 AM
+-- Generation Time: Apr 26, 2023 at 08:51 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -59,15 +59,6 @@ CREATE TABLE `c1` (
   `timeslot` varchar(255) NOT NULL,
   `carnumber` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `c1`
---
-
-INSERT INTO `c1` (`id`, `name`, `carmodel`, `email`, `owner_email`, `date`, `timeslot`, `carnumber`) VALUES
-(1, 'Mayank kumar Shrivastva', 'MG ZS EV', 'shrivastva.mayank27@gmail.com', 'aryan.singh_cs20@gla.ac.in', '2023-04-23', '09:00AM-10:00AM', 'HR26DQ7854'),
-(2, 'Mayank kumar Shrivastva', 'MG ZS EV', 'shrivastva.mayank27@gmail.com', 'aryan.singh_cs20@gla.ac.in', '2023-04-28', '23:00PM-00:00AM', 'HR26DQ7854'),
-(3, 'Mayank kumar Shrivastva', 'Tata Tiago EV', 'shrivastva.mayank27@gmail.com', 'mayank.shrivastva_cs21@gla.ac.in', '2023-04-24', '09:00AM-10:00AM', 'HR26DQ5551');
 
 -- --------------------------------------------------------
 
@@ -133,6 +124,13 @@ CREATE TABLE `contact` (
   `msg` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `name`, `email`, `subject`, `msg`) VALUES
+(1, 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', 'test', 'test');
+
 -- --------------------------------------------------------
 
 --
@@ -155,13 +153,7 @@ CREATE TABLE `s1` (
 --
 
 INSERT INTO `s1` (`id`, `station`, `name`, `email`, `owner_email`, `date`, `timeslot`, `vnumber`) VALUES
-(2, 'Yahhvi Charging Station (Vrindavan)', 'ks', 'shrivastva.mayank27@gmail.com', 'aryan.singh_cs20@gla.ac.in', '2023-04-27', '16:00PM-17:00PM', 'asdfghjkl'),
-(3, 'Saraswat Motors Station( Lohvan)', 'uf', 'shrivastva.mayank27@gmail.com', 'mayank.shrivastva_cs21@gla.ac.in', '2023-04-27', '11:00AM-12:00PM', 'fgfg'),
-(4, 'Yahhvi Charging Station (Vrindavan)', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', 'aryan.singh_cs20@gla.ac.in', '2023-04-28', '11:00AM-12:00PM', 'wertyuiop['),
-(8, 'AARGO Charging Station (Kosi Kalan)', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', 'Himanshudubey802@gmail.com', '2023-04-24', '10:00AM-11:00AM', 'fghj'),
-(9, 'AARGO Charging Station (Kosi Kalan)', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', 'Himanshudubey802@gmail.com', '2023-04-24', '11:00AM-12:00PM', '234567'),
-(10, 'AARGO Charging Station (Kosi Kalan)', 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', 'Himanshudubey802@gmail.com', '2023-04-25', '23:00PM-00:00AM', 'bnm'),
-(11, 'AARGO Charging Station (Kosi Kalan)', 'ks', 'mayank.shrivastva_cs21@gla.ac.in', 'Himanshudubey802@gmail.com', '2023-04-26', '11:00AM-12:00PM', 'DL4SD6987');
+(1, 'AARGO Charging Station (Kosi Kalan)', 'Mayank kumar Shrivastva', 'mayank.shrivastva_cs21@gla.ac.in', 'Himanshudubey802@gmail.com', '2023-04-26', '10:00AM-11:00AM', 'dfghj');
 
 -- --------------------------------------------------------
 
@@ -206,8 +198,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `code`) VALUES
-(1, 'Mayank kumar Shrivastva', 'shrivastva.mayank27@gmail.com', 'df780a97b7d6a8f779f14728bccd3c4c', ''),
-(2, 'ks', 'mayank.shrivastva_cs21@gla.ac.in', 'df780a97b7d6a8f779f14728bccd3c4c', '');
+(1, 'Mayank kumar Shrivastva', 'mayank.shrivastva_cs21@gla.ac.in', 'df780a97b7d6a8f779f14728bccd3c4c', '');
 
 --
 -- Indexes for dumped tables
@@ -275,7 +266,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `c1`
 --
 ALTER TABLE `c1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `cardetails`
@@ -293,13 +284,13 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `s1`
 --
 ALTER TABLE `s1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `stationdetail`
@@ -311,7 +302,7 @@ ALTER TABLE `stationdetail`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

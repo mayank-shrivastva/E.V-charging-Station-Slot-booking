@@ -36,8 +36,8 @@ if (isset($_POST['submit'])) {
                 $mail->isSMTP();                                             
                $mail->Host       = 'smtp.gmail.com';                      
                         $mail->SMTPAuth   = true;                                   
-                        $mail->Username   = '';                      
-                        $mail->Password   = '';                               
+                        $mail->Username   = 'mayank14072003@gmail.com';                     
+                        $mail->Password   = 'xaanlflzudbjianp';                                
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
                         $mail->Port       = 465;                                                     
 
@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
                 //Content
                 $mail->isHTML(true);                                  //Set email format to HTML
                 $mail->Subject = 'no reply';
-                $mail->Body    = 'Here is the verification link <b><a href="http://localhost/EVRC(Electronic-vehicle-rental-&-charging)/user/login?verification='.$code.'">Verify</a></b>';
+                $mail->Body    = 'Here is the verification link <b><a href="http://localhost/E.V-charging-Station-Slot-booking/user/login?verification='.$code.'">Verify</a></b>';
 
                 $mail->send();
                 echo 'Message has been sent';

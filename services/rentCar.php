@@ -87,7 +87,7 @@
                 <h3>Max Torque (nm@rpm) : 114Nm </h3>
                 <h3>Range : 315km </h3>
                 <h3>Body Type : Hatchback </h3>
-                <h2>$58500 | $358 <span>/month</span></h2>
+                <h2>250 rs<span>/hour</span></h2>
                 <a href="../user/login" class="btn">Rent Now</a>
             </div>
 
@@ -104,7 +104,7 @@
                 <h3>Max Torque (nm@rpm) : 605Nm </h3>
                 <h3>Range : 700km </h3>
                 <h3>Body Type : SUV </h3>
-                <h2>$58500 | $358 <span>/month</span></h2>
+                <h2>250 rs <span>/hour</span></h2>
                 <a href="../user/login" class="btn">Rent Now</a>
             </div>
 
@@ -121,7 +121,7 @@
                 <h3>Max Torque (nm@rpm) : 280Nm </h3>
                 <h3>Range : 461km </h3>
                 <h3>Body Type : SUV </h3>
-                <h2>$58500 | $358 <span>/month</span></h2>
+                 <h2>250 rs <span>/hour</span></h2>
                 <a href="../user/login" class="btn">Rent Now</a>
             </div>
 

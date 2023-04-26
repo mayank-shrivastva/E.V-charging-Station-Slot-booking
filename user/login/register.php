@@ -42,19 +42,19 @@
                         $mail->isSMTP();                                            
                         $mail->Host       = 'smtp.gmail.com';                      
                         $mail->SMTPAuth   = true;                                  
-                        $mail->Username   = '';                     
-                        $mail->Password   = '';                                
+                        $mail->Username   = 'mayank14072003@gmail.com';                     
+                        $mail->Password   = 'xaanlflzudbjianp';                                  
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
                         $mail->Port       = 465;                                    
 
                         //Recipients
-                        $mail->setFrom('');
+                        $mail->setFrom('mayank14072003@gmail.com');
                         $mail->addAddress($email);
 
                         //Content
                         $mail->isHTML(true);                                   
                         $mail->Subject = 'no reply';
-                        $mail->Body    = 'Here is the verification link <b><a href="http://localhost/EVRC(Electronic-vehicle-rental-&-charging)/user/login?verification='.$code.'">Verify</a></b>';
+                        $mail->Body    = 'Here is the verification link <b><a href="http://localhost/E.V-charging-Station-Slot-booking/user/login?verification='.$code.'">Verify</a></b>';
 
                         $mail->send();
                         echo 'Message has been sent';
@@ -111,7 +111,7 @@
                     </div>
                     <div class="content-wthree">
                         <h2>Register Now</h2>
-                       
+                         
                         <?php echo $msg; ?>
                         <form action="" method="post">
                             <input type="text" class="name" name="name" placeholder="Enter Your Name" value="<?php if (isset($_POST['submit'])) { echo $name; } ?>" required>

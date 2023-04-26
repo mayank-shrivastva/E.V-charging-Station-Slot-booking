@@ -103,7 +103,7 @@
 							<span class="nav-text">Rent Car</span>
 						</a>
                     </li>
-                    
+					 
                     
                    
                    
@@ -222,7 +222,7 @@
 													 
 													 
 													<td>
-														<h6 class="fs-16 text-black font-w600 mb-0"><?php echo $row['name'];?><h6>
+														<h6 class="fs-16 text-black font-w600 mb-0"><?php echo $row['station'];?><h6>
 														 
 													</td>
 													<td>

@@ -36,19 +36,19 @@ if (isset($_POST['submit'])) {
                 $mail->isSMTP();                                            //Send using SMTP
                $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
                         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-                        $mail->Username   = '';                     //SMTP username
-                        $mail->Password   = '';                               //SMTP password
+                       $mail->Username   = 'mayank14072003@gmail.com';                     
+                        $mail->Password   = 'xaanlflzudbjianp';                                //SMTP password
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
                         $mail->Port       = 465;                                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
                 //Recipients
-               $mail->setFrom('');
+               $mail->setFrom('mayank14072003@gmail.com');
                 $mail->addAddress($email);
 
                 //Content
                 $mail->isHTML(true);                                  //Set email format to HTML
                 $mail->Subject = 'no reply';
-                $mail->Body    = 'Here is the verification link <b><a href="http://localhost/EVRC(Electronic-vehicle-rental-&-charging)/admin/login?verification='.$code.'">Verify</a></b>';
+                $mail->Body    = 'Here is the verification link <b><a href="http://localhost/E.V-charging-Station-Slot-booking/admin/login?verification='.$code.'">Verify</a></b>';
 
                 $mail->send();
                 echo 'Message has been sent';

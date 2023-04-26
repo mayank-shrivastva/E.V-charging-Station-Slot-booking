@@ -1,4 +1,4 @@
- <?php
+<?php
     session_start();
     if (!isset($_SESSION['SESSION_EMAIL'])) {
         header("Location: index.php");
@@ -21,7 +21,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>client Portal</title>
+	<title>Client Portal</title>
     <link href="css/style.css" rel="stylesheet">
 	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
@@ -53,11 +53,13 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
 							<div class="dashboard_bar">
-Client Portal           </div></div>
+                              client Portal
+                            </div>
+                        </div>
                         <ul class="navbar-nav header-right">
 			 
                             <li class="nav-item">
-							<a href="login/logout.php" class="btn btn-primary d-sm-inline-block d-none">Logout<i class="las la-signal ms-3 scale5"></i></a>
+								<a href="login/logout.php" class="btn btn-primary d-sm-inline-block d-none">Logout<i class="las la-signal ms-3 scale5"></i></a>
 							</li>
                         </ul>
                     </div>
@@ -79,11 +81,12 @@ Client Portal           </div></div>
 							<img src="images/ion/man (1).png" width="20" alt=""/>
 							<div class="header-info ms-3">
 								<span class="font-w600 "><?php echo $row['owner name'];?></span>
+								 
 							</div>
 						</a>
 						
 					</li>
-                     <li><a href="Dashbard.php" aria-expanded="false">
+                       <li><a href="Dashbard.php" aria-expanded="false">
 							<i class="flaticon-025-dashboard"></i>
 							<span class="nav-text">Dashboard</span>
 						</a>
@@ -98,13 +101,14 @@ Client Portal           </div></div>
 							<span class="nav-text">Rent Car service</span>
 						</a>
                     </li>
-                    
-                    
-                   	<li><a href="contact-form.php" aria-expanded="false">
+						<li><a href="contact-form.php" aria-expanded="false">
 							<i class="flaticon-041-graph"></i>
 							<span class="nav-text">Contect-Form</span>
 						</a>
                     </li>
+                    
+                    
+                   
                    
                    
                 </ul>
@@ -117,7 +121,7 @@ Client Portal           </div></div>
 						<div class="card">
 							<div class="card-header d-block d-sm-flex border-0">
 								<div class="me-3">
-									<h4 class="card-title mb-2">Car Booking</h4>
+									<h4 class="card-title mb-2"> Charging Details</h4> 
 								</div>
 								 
 							</div>
@@ -127,38 +131,28 @@ Client Portal           </div></div>
 										 <table class="table table-responsive-md card-table transactions-table">
 											<tbody>
 												<tr> 
-												 
+													 
 													<td>
 														<h6 class="fs-16 text-black font-w600 mb-0">Name</h6>
 														 
 													</td><td>
-														<h6 class="fs-16 text-black font-w600 mb-0">Car Model</h6>
-														 
-													</td>
-													<td>
 														<h6 class="fs-16 text-black font-w600 mb-0">Email</h6>
 														 
 													</td>
-													 
 													<td>
-														<h6 class="fs-16 text-black font-w600 mb-0">Date</h6>
+														<h6 class="fs-16 text-black font-w600 mb-0">Subject</h6>
 														 
 													</td>
 													<td>
-														<h6 class="fs-16 text-black font-w600 mb-0">Timeslot</h6>
+														<h6 class="fs-16 text-black font-w600 mb-0">Message</h6>
 														 
 													</td>
-													<td>
-														<h6 class="fs-16 text-black font-w600 mb-0">Car Number</h6>
-														 
-													</td>
-													 
 													 
 													 
 													 
 												</tr>
 												<?php  
-									$sql="SELECT * FROM   c1";
+									$sql="SELECT * FROM contact";
 									$result=mysqli_query($conn,$sql);
 									$present=mysqli_num_rows($result);
 									if($present>0)
@@ -169,42 +163,31 @@ Client Portal           </div></div>
 										?>
 												<tr>
 													 
-													 
+												 
 													<td>
 														<h6 class="fs-16 text-black font-w600 mb-0"><?php echo $row['name'];?><h6>
-														 
-													</td>
-													<td>
-														<h6 class="fs-16 text-black font-w600 mb-0"><?php echo $row['carmodel'];?><h6>
 														 
 													</td>
 													<td>
 														<h6 class="fs-16 text-black font-w600 mb-0"><?php echo $row['email'];?><h6>
 														 
 													</td>
-													 
 													<td>
-														<h6 class="fs-16 text-black font-w600 mb-0"><?php echo $row['date'];?><h6>
+														<h6 class="fs-16 text-black font-w600 mb-0"><?php echo $row['subject'];?><h6>
 														 
 													</td>
 													<td>
-														<h6 class="fs-16 text-black font-w600 mb-0"><?php echo $row['timeslot'];?><h6>
+														<h6 class="fs-16 text-black font-w600 mb-0"><?php echo $row['msg'];?><h6>
 														 
 													</td>
-													<td>
-														<h6 class="fs-16 text-black font-w600 mb-0"><?php echo $row['carnumber'];?><h6>
-														 
-													</td>
-													
-														 
-														 
-													
-													 
-													 
+												 
 													 
 												 
 												 
-												 <?php }} ?>
+												 <?php }} 
+								                  
+												 ?>
+
 											</tbody>
 										</table>
 					</div>

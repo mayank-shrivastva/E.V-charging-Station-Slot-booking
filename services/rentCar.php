@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rental Website</title>
@@ -9,22 +9,24 @@
     <link rel="stylesheet"
     href="https://cdn.jsdeliver.net/npm/boxicons@latest/css/boxicons.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
 </head>
 <body>
 <header>
 <a href="../index.php" class="logo" ><h1>EVRC</h1></a>
-<div class="bx bx-menu" id="menu-icon"></div>
+
 <ul class="navbar">
+    
  
 <li><a href="../index.php">Home</a></li>
 <li><a href="../about.php">About</a></li>
 <li><a href="../services.php">Service</a></li>
 <li><a href="../contact.php">Contact</a></li>
-</ul>
-<div class="header-btn">
-<a href="../user/login/" class="sign-up"> Login</a>
-</div>
+<li><div class="header-btn">
+    <a href="../user/login/" class="sign-up"> Login</a>
+    </div></li>
+</ul><i class="material-icons" style="font-size:26px" id="showMenu">menu</i>
 </header>
     <!--home-->
     <section class="home" id="home"> 
@@ -45,7 +47,7 @@
     <section class="ride" id="ride">    
         <div class="heading">
             <span>How Its Work</span>
-            <h1>Charge With 3 Easy Steps </h1>
+            <h1>Book With 3 Easy Steps </h1>
         </div>
     <div class="ride-container">
         <div class="box">
@@ -209,5 +211,17 @@
                 </div>
             </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $('#showMenu').click(function () {
+    if ($('.navbar').is(':hidden')) {
+        $('.navbar').show();
+    } else {
+        $('.navbar').hide();
+    }
+  }); 
+});
+</script>
 </body>
 </html>

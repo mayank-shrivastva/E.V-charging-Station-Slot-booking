@@ -74,7 +74,7 @@ header{
 	left:0;
 	transition: 0.5s;
 }
-.navbar a:: hover::after{
+.navbar a:hover::after{
 	width:100%;
 	
 	
@@ -85,7 +85,7 @@ header{
 	color:var(--text-color);
 	font-weight:500;
 }
-.header-btn . sign-in{
+.header-btn .sign-in{
 	background:#474fa0;
 	color: #fff;
 	border-radius: 0.5rem;
@@ -94,7 +94,7 @@ header{
 	background: var(--main-color);
 	
 }
-#menu-icon{
+#material-icons{
 	font-size:24px;
 	cursor:pointer;
 	z-index:10001;
@@ -126,7 +126,7 @@ header{
 }
 .text p{
     margin: 00.5rem 0 1rem;
-    text-align;
+    text-align:center;
 }
 .app-stores{
     display: flex;
@@ -199,7 +199,7 @@ header{
    
 }
 .services-container .box p {
-    padding: 0 10px;
+    padding: -1 10px;
     border: 1px solid black ;
     width: 40px;
     border-radius: 0.5rem;
@@ -291,6 +291,7 @@ header{
 .reviews-container .box .stars .bx{
     color: orange;
 }
+
 /*Responsive*/
 @media (max-width: 991px){
    header{
@@ -311,7 +312,7 @@ header{
         padding: 11px 40px;
 		background-color: #eeeff1;
     }
-	#menu-icon{
+	#material-icons{
 		display: initial;
 	}
 	.sign-up{
@@ -325,6 +326,39 @@ header{
     }
     .home{
         grid-template-columns: 1fr;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        transform: 0.2s ease;
+        text-align: left;
+
+
+    }
+    .navbar.active{
+        top: 100%;
+
+    }
+    .navbar a{
+        padding: 1rem;
+        border-left: 2px solid orange;
+        margin: 1rem;
+        display: block;
+
+    }
+    .navbar a:hover{
+        color: #fff;
+        background: orange;
+        border: none;
+    }
+    .navbar a::after{
+        display: none;
     }
     .heading span{
         font-size: 0.9rem;

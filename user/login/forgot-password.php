@@ -95,9 +95,7 @@ if (isset($_POST['submit'])) {
             <!-- /form -->
             <div class="workinghny-form-grid">
                 <div class="main-mockup">
-                    <div class="alert-close">
-                        <span class="fa fa-close"></span>
-                    </div>
+                     
                     <div class="w3l_form align-self">
                         <div class="left_grid_info">
                             <img src="images/image3.svg" alt="">

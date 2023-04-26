@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car chargingx Website</title>
+    <title>Car Rental Website</title>
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet"
     href="https://cdn.jsdeliver.net/npm/boxicons@latest/css/boxicons.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
 	  
     
 </head>
 <body>
 <header>
 <a href="../index.php" class="logo" ><h1>EVRC</h1></a>
-<div class="bx bx-menu" id="menu-icon"></div>
+
 <ul class="navbar">
+    
  
 <li><a href="../index.php">Home</a></li>
 <li><a href="../about.php">About</a></li>
 <li><a href="../services.php">Service</a></li>
 <li><a href="../contact.php">Contact</a></li>
-</ul>
-<div class="header-btn">
-<a href="../user/login/" class="sign-up"> Login</a>
-</div>
+<li><div class="header-btn">
+    <a href="../user/login/" class="sign-up"> Login</a>
+    </div></li>
+</ul><i class="material-icons" style="font-size:26px" id="showMenu">menu</i>
+
 </header>
   
     <!--home-->
@@ -120,7 +123,7 @@
         </div>
         <div class="about-container">
             <div class="about-img">
-                <img src="img/car zone.png" alt="">
+                <img src="img/car-zone.png" alt="">
             </div>
             <div class="about-text">
                 <span>About Us</span>
@@ -199,5 +202,17 @@ Bicycle Rentals</p>
                 </div>
             </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $('#showMenu').click(function () {
+    if ($('.navbar').is(':hidden')) {
+        $('.navbar').show();
+    } else {
+        $('.navbar').hide();
+    }
+  }); 
+});
+</script>
 </body>
 </html>

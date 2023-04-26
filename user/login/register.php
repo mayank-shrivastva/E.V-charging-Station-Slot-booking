@@ -42,13 +42,12 @@
                         $mail->isSMTP();                                            
                         $mail->Host       = 'smtp.gmail.com';                      
                         $mail->SMTPAuth   = true;                                  
-                        $mail->Username   = 'mayank14072003@gmail.com';                     
-                        $mail->Password   = 'xaanlflzudbjianp';                                  
+                                                          
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
                         $mail->Port       = 465;                                    
 
                         //Recipients
-                        $mail->setFrom('mayank14072003@gmail.com');
+                        $mail->setFrom(' ');
                         $mail->addAddress($email);
 
                         //Content

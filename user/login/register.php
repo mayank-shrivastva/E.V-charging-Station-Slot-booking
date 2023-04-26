@@ -41,7 +41,9 @@
                         $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      
                         $mail->isSMTP();                                            
                         $mail->Host       = 'smtp.gmail.com';                      
-                        $mail->SMTPAuth   = true;                                  
+                        $mail->SMTPAuth   = true;  
+                      $mail->Username   = '';                     
+                        $mail->Password   = '';     
                                                           
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
                         $mail->Port       = 465;                                    
